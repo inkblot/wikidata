@@ -1,0 +1,3 @@
+<project name="wikidata" default="build-common.dist">
+    <import file="${basedir}/build-common/build-common.xml"/>
+</project>
