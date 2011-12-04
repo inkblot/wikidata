@@ -135,13 +135,6 @@ public class ParserTestHelper {
         return result.toString();
     }
 
-    public static String serializeContent(Symbol symbol) {
-        StringBuilder result = new StringBuilder();
-        if (symbol.getContent() != null) result.append(symbol.getContent());
-        for (Symbol child : symbol.getChildren()) result.append(serializeContent(child));
-        return result.toString();
-    }
-
     public static String metaHtml(String message) {
         return "<span class=\"meta\">" + message + "</span>";
     }
